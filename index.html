@@ -57,8 +57,8 @@
             // WhatsApp contact number (replace with your number)
             var whatsappNumber = '919866783703';
             
-            // Format the message with line breaks using %0D%0A
-            var formattedMessage = `*Name:* ${name}%0D%0A*Email:* ${email}%0D%0A*Phone:* ${phone}%0D%0A*Subject:* ${subject}%0D%0A*Message:* ${message}`;
+            // Format the message with line breaks
+            var formattedMessage = `*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Subject:* ${subject}\n*Message:* ${message}`;
             
             // Create the WhatsApp URL
             var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(formattedMessage)}`;
